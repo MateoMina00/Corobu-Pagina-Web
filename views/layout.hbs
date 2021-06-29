@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesped Corobu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/corobu.css">   
+</head>
+  <body>
+    <header>
+            <div class="holder">
+                <img src="images/logo.png" alt="Cesped Corobu" width="100">
+                <h1>Cesped Corobu</h1>
+            </div>
+    </header>
+    <nav>
+           <div class="holder">
+                <ul>
+                    <li><a class="{{#if isIndex}}activo{{/if}}" href="/">Inicio</a></li>
+                    <li><a class="{{#if isNosotros}}activo{{/if}}" href="/nosotros">Nosotros</a></li>
+                    <li><a class="{{#if isNovedades}}activo{{/if}}" href="/novedades">Novedades</a></li>
+                    <li><a class="{{#if isContacto}}activo{{/if}}" href="/contacto">Contacto</a></li>
+                </ul>
+           </div>
+    </nav>
+    <main>
+      {{{body}}}
+    </main>
+    <footer>
+            <div class="holder">
+                <p>Diseñado por Mateo Mina - &copy;2021</p>
+            </div>
+            
+    </footer>
+    
+  </body>
+</html>
